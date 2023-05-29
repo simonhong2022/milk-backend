@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 @Controller
-@CrossOrigin(origins = "http:/localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("api/milks")
 public class MilkController {
 
