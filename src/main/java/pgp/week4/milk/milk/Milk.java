@@ -29,6 +29,10 @@ public class Milk {
         this.storage = storage;
     }
 
+    public Milk() {
+
+    }
+
     public String getId() {
         return id;
     }

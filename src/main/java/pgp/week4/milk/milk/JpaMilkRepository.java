@@ -1,5 +1,6 @@
 package pgp.week4.milk.milk;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
