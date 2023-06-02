@@ -18,10 +18,10 @@ public class MilkController {
 
     private final MilkService milkService;
 
-
     public MilkController(MilkService milkService) {
         this.milkService = milkService;
     }
+
 
     @GetMapping
     ResponseEntity<List<MilkResponseDTO>> getAllMilks() {

@@ -4,9 +4,11 @@ package pgp.week4.milk.milk;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name="milk")
-public class Milk {
+public class Milk implements Serializable {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(

@@ -18,7 +18,7 @@ public class MilkService {
         this.milkRepository = repo;
     }
 
-    List<Milk> getAllMilks() {
+    public List<Milk> getAllMilks() {
         return milkRepository.listMilks();
     }
 
@@ -34,7 +34,7 @@ public class MilkService {
         milkRepository.saveMilks(milks);
     }
 
-    public Milk updateMilkData(Milk newMilkData) {
+    public Milk updateMilkData(@org.jetbrains.annotations.NotNull Milk newMilkData) {
         Milk storedMilk = findById(newMilkData.getId());
         if (storedMilk == null) {
             return null;
@@ -52,5 +52,6 @@ public class MilkService {
     public void deleteMilk(String id) {
         milkRepository.deleteMilk(id);
     }
+
 
 }
